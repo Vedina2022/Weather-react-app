@@ -1,0 +1,18 @@
+.weather-forecast-day {
+  font-weight: bold;
+  color: #2682bb;
+  margin: 20px 0 7px;
+}
+.max-temperature {
+  font-size: 16px;
+  font-weight: bold;
+}
+.min-temperature {
+  font-size: 16px;
+}
+.daily-forecast {
+  text-align: center;
+}
+/* .daily-forecast {
+  margin: 0 auto;
+} */

@@ -1,11 +1,11 @@
 import "./CurrentWeather.css";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function CurrentWeather() {
   let weathetData = {
     city: "Mykolaiv",
     date: "Wednesday, September 7, 2022, 14:59",
     description: "Broken clouds",
-    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
     humidity: 76,
     wind: 2,
     temperature: 11,
@@ -20,10 +20,11 @@ export default function CurrentWeather() {
             <li className="current-time">{weathetData.date}</li>
             <li>{weathetData.description}</li>
           </ul>
-          <img
-            src={weathetData.imgUrl}
-            alt={weathetData.description}
-            className="float-left today-icon"
+          <ReactAnimatedWeather
+            icon="PARTLY_CLOUDY_DAY"
+            color="black"
+            size="70"
+            animate={true}
           />
         </div>
         <div className="col-6">
