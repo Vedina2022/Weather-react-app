@@ -1,6 +1,6 @@
 import "./CurrentWeather.css";
 
-export default function () {
+export default function CurrentWeather() {
   let weathetData = {
     city: "Mykolaiv",
     date: "Friday, August 19, 2022, 15:54",
