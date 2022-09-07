@@ -3,13 +3,13 @@ import "./CurrentWeather.css";
 export default function CurrentWeather() {
   let weathetData = {
     city: "Mykolaiv",
-    date: "Friday, August 19, 2022, 15:54",
-    description: "Cloudy",
+    date: "Wednesday, September 7, 2022, 14:59",
+    description: "Broken clouds",
     imgUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
-    humidity: 74,
-    wind: 3,
-    temperature: 19,
-    feelsLike: 19,
+    humidity: 76,
+    wind: 2,
+    temperature: 11,
+    feelsLike: 10,
   };
   return (
     <div>
