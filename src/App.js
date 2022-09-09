@@ -1,4 +1,6 @@
+import React from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
 import Search from "./Search";
 import CurrentWeather from "./CurrentWeather";
 import DailyWeather from "./DailyWeather";

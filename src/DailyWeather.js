@@ -1,4 +1,6 @@
+import React from "react";
 import "./DailyWeather.css";
+import "bootstrap/dist/css/bootstrap.css";
 import ReactAnimatedWeather from "react-animated-weather";
 
 export default function DailyWeather() {

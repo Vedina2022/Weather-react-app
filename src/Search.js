@@ -1,4 +1,6 @@
+import React from "react";
 import "./Search.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function Search() {
   return (
