@@ -3,6 +3,7 @@ import axios from "axios";
 import "./CurrentWeather.css";
 import "bootstrap/dist/css/bootstrap.css";
 import ReactAnimatedWeather from "react-animated-weather";
+import FormattedDate from "./FormattedDate";
 
 export default function CurrentWeather(props) {
   let [weatherData, setWeatherData] = useState({ ready: false });
@@ -12,7 +13,7 @@ export default function CurrentWeather(props) {
     setWeatherData({
       ready: true,
       city: response.data.name,
-      date: "Wednesday, September 7, 2022, 14:59",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
@@ -60,7 +61,9 @@ export default function CurrentWeather(props) {
           <div className="col-6">
             <ul>
               <li className="city">{weatherData.city}</li>
-              <li className="current-time">{weatherData.date}</li>
+              <li className="current-time">
+                <FormattedDate date={weatherData.date} />
+              </li>
               <li className="text-capitalize">{weatherData.description}</li>
             </ul>
             <img src={weatherData.iconUrl} alt={weatherData.description} />{" "}
