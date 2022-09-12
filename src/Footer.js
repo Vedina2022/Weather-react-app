@@ -7,9 +7,9 @@ export default function Footer() {
     <div className="footer">
       <p className="developer" id="developer">
         <a
-          href="https://github.com/Vedina2022/Weather-forecast-app.git"
+          href="https://github.com/Vedina2022/Weather-react-app"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="developer-link"
         >
           Open-source code
