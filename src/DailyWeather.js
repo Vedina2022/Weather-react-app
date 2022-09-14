@@ -10,7 +10,7 @@ export default function DailyWeather() {
         <div className="weather-forecast-day">WED</div>
         <ReactAnimatedWeather
           icon="PARTLY_CLOUDY_DAY"
-          color="black"
+          color="#474649"
           size="40"
           animate={true}
         />
@@ -23,7 +23,7 @@ export default function DailyWeather() {
         <div className="weather-forecast-day">THU</div>
         <ReactAnimatedWeather
           icon="PARTLY_CLOUDY_DAY"
-          color="black"
+          color="#474649"
           size="40"
           animate={true}
         />
@@ -36,7 +36,7 @@ export default function DailyWeather() {
         <div className="weather-forecast-day">FRI</div>
         <ReactAnimatedWeather
           icon="RAIN"
-          color="black"
+          color="#474649"
           size="40"
           animate={true}
         />
@@ -49,7 +49,7 @@ export default function DailyWeather() {
         <div className="weather-forecast-day">SAT</div>
         <ReactAnimatedWeather
           icon="RAIN"
-          color="black"
+          color="#474649"
           size="40"
           animate={true}
         />
@@ -62,7 +62,7 @@ export default function DailyWeather() {
         <div className="weather-forecast-day">SUN</div>
         <ReactAnimatedWeather
           icon="RAIN"
-          color="black"
+          color="#474649"
           size="40"
           animate={true}
         />
@@ -75,7 +75,7 @@ export default function DailyWeather() {
         <div className="weather-forecast-day">MON</div>
         <ReactAnimatedWeather
           icon="RAIN"
-          color="black"
+          color="#474649"
           size="40"
           animate={true}
         />

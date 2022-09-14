@@ -69,3 +69,9 @@ ul {
 .current-weather .fahrenheit {
   text-decoration: none;
 }
+
+/* .WeatherIcon canvas {
+  width: 64px;
+  margin-top: 10px;
+  color:#a4b150;
+} */
