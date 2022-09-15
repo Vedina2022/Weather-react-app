@@ -43,9 +43,9 @@ export default function CurrentWeather(props) {
         <div className="search">
           <form className="search-form" onSubmit={handleSubmit}>
             <div className="row">
-              <div className="col-8">
+              <div className="col-10">
                 <input
-                  type="text"
+                  type="search"
                   placeholder="Search for location..."
                   className="form-control search-input"
                   autoFocus="on"
@@ -55,8 +55,8 @@ export default function CurrentWeather(props) {
               <div className="col-2">
                 <button type="submit">Search</button>
               </div>
-              <div className="col-2">
-                <button className="btn btn-succes">
+              {/* <div className="col-2">
+                <button className="btn-succes">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -68,7 +68,7 @@ export default function CurrentWeather(props) {
                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                   </svg>
                 </button>
-              </div>
+              </div> */}
             </div>
           </form>
           <WeatherInfo data={weatherData} />
