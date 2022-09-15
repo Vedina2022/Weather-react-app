@@ -61,17 +61,7 @@ ul {
   margin-left: 150px;
 }
 
-.current-weather .active {
-  color: #202124;
-  cursor: default;
+.current-weather .celsius,
+.fahrenheit {
   text-decoration: none;
 }
-.current-weather .fahrenheit {
-  text-decoration: none;
-}
-
-/* .WeatherIcon canvas {
-  width: 64px;
-  margin-top: 10px;
-  color:#a4b150;
-} */
