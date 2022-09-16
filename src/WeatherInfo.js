@@ -15,7 +15,7 @@ export default function WeatherInfo(props) {
             </li>
             <li className="text-capitalize">{props.data.description}</li>
           </ul>
-          <WeatherIcon code={props.data.icon} />{" "}
+          <WeatherIcon code={props.data.icon} size={65} />{" "}
         </div>
         <div className="col-6">
           <div className="current-weather">
