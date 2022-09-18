@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./DailyWeather.css";
 import "bootstrap/dist/css/bootstrap.css";
-
 import axios from "axios";
 import DailyForecast from "./DailyFocast";
 
@@ -9,14 +8,16 @@ export default function DailyWeather(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 
+  useEffect(() => {
+    setLoaded(false);
+  }, [props.coordinates]);
+
   function handleResponse(response) {
-    console.log(response.data);
     setForecast(response.data.daily);
     setLoaded(true);
   }
 
   if (loaded) {
-    console.log(forecast);
     return (
       <div className="row">
         {forecast.map(function (dailyForecast, index) {
@@ -26,6 +27,8 @@ export default function DailyWeather(props) {
                 <DailyForecast data={dailyForecast} />
               </div>
             );
+          } else {
+            return null;
           }
         })}
       </div>
