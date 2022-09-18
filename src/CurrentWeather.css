@@ -26,20 +26,6 @@ button:hover {
   color: #2682bb;
   background-color: #f6e881;
 }
-/* .btn-succes {
-  color: #2682bb;
-  background: #f6e881;
-  border-radius: 5px;
-  border: none;
-  width: 50px;
-  height: 40px;
-  margin-left: 25px;
-  padding: 0;
-}
-.btn-succes:hover {
-  color: #f6e881;
-  background-color: #2682bb;
-} */
 
 ul {
   list-style: none;
@@ -51,7 +37,8 @@ ul {
 }
 .units {
   position: relative;
-  top: -22px;
+  top: -20px;
+  font-size: 20px;
 }
 
 .temperature {
@@ -59,9 +46,4 @@ ul {
 }
 .current-weather {
   margin-left: 150px;
-}
-
-.current-weather .celsius,
-.fahrenheit {
-  text-decoration: none;
 }

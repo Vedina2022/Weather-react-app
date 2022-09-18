@@ -6,3 +6,18 @@
   opacity: 0.9;
   margin: 80px auto;
 }
+.developer {
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 1;
+}
+.developer-link {
+  text-decoration: none;
+}
+.developer-link:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 40px;
+}
