@@ -13,7 +13,7 @@ export default function DailyForecast(props) {
   }
 
   function day() {
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
     let date = new Date(props.data.dt * 1000);
     let day = date.getDay();
     return days[day];
