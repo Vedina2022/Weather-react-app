@@ -42,25 +42,40 @@ export default function CurrentWeather(props) {
   if (weatherData.ready) {
     return (
       <div className="weather">
-        <div className="search">
-          <form className="search-form" onSubmit={handleSubmit}>
-            <div className="row">
-              <div className="col-10">
-                <input
-                  type="search"
-                  placeholder="Search for location..."
-                  className="form-control search-input"
-                  autoFocus="on"
-                  onChange={handleCityChange}
-                />
+        <div className="container">
+          <div className="search">
+            <form className="search-form" onSubmit={handleSubmit}>
+              <div className="row">
+                <div className="col-10">
+                  <input
+                    type="search"
+                    placeholder="Search for location..."
+                    className="form-control search-input"
+                    autoFocus="on"
+                    onChange={handleCityChange}
+                  />
+                </div>
+                <div className="col-2">
+                  <button type="submit">Search</button>
+                </div>
               </div>
-              <div className="col-2">
-                <button type="submit">Search</button>
-              </div>
-            </div>
-          </form>
-          <WeatherInfo data={weatherData} />
-          <DailyWeather coordinates={weatherData.coordinates} />
+            </form>
+            <WeatherInfo data={weatherData} />
+            <DailyWeather coordinates={weatherData.coordinates} />
+          </div>
+          <div className="footer">
+            <p className="developer" id="developer">
+              <a
+                href="https://github.com/Vedina2022/Weather-react-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="developer-link"
+              >
+                Open-source code
+              </a>
+              <span> by Nadiia Kyshinska</span>
+            </p>
+          </div>
         </div>
       </div>
     );
