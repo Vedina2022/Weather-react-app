@@ -8,8 +8,11 @@ import DailyWeather from "./DailyWeather";
 export default function CurrentWeather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  const [description, setDescription] = useState(props.description);
+  let [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       coordinates: response.data.coord,
       ready: true,
@@ -22,6 +25,7 @@ export default function CurrentWeather(props) {
       temperature: response.data.main.temp,
       feelsLike: response.data.main.feels_like,
     });
+    setDescription(response.data.weather[0].description);
   }
 
   function search() {
@@ -29,6 +33,16 @@ export default function CurrentWeather(props) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
+
+  function handlePexelResponse(response) {
+    console.log(response.data.photos[0].src.landscape);
+    setPhotos(response.data.photos[0].src.landscape);
+  }
+
+  let pexelApiKey = "563492ad6f91700001000001f7796f2bf9a84b628875590e1f09586c";
+  let pexelApiUrl = `https://api.pexels.com/v1/search?query=${description}&per_page=1`;
+  const headers = { Authorization: `Bearer ${pexelApiKey}` };
+  axios.get(pexelApiUrl, { headers: headers }).then(handlePexelResponse);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -41,7 +55,7 @@ export default function CurrentWeather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="weather">
+      <div className="weather" style={{ backgroundImage: `url(${photos})` }}>
         <div className="container">
           <div className="search">
             <form className="search-form" onSubmit={handleSubmit}>

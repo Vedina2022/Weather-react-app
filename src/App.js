@@ -6,7 +6,7 @@ import CurrentWeather from "./CurrentWeather";
 function App() {
   return (
     <div className="App">
-      <CurrentWeather defaultCity="Mykolaiv" />
+      <CurrentWeather defaultCity="Mykolaiv" description="Clear Sky" />
     </div>
   );
 }

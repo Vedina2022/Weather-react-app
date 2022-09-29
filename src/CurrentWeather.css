@@ -1,3 +1,12 @@
+.weather {
+  font-family: "Roboto Flex", sans-serif;
+  /* background: url("./Ukraine.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px;
+}
+
 .search-form {
   width: 100%;
   margin-top: 10px;
