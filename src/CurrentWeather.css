@@ -1,10 +1,11 @@
 .weather {
   font-family: "Roboto Flex", sans-serif;
-  /* background: url("./Ukraine.jpg"); */
+  background: url("https://ak.picdn.net/shutterstock/videos/1082810140/preview/stock-footage--k-change-season-from-green-summer-to-yellow-colors-of-autumn-forest-landscape-sunlight-shine.mp4");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 50px;
+  min-height: 100vh;
 }
 
 .search-form {

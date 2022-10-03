@@ -25,7 +25,7 @@ export default function CurrentWeather(props) {
       temperature: response.data.main.temp,
       feelsLike: response.data.main.feels_like,
     });
-    setDescription(response.data.weather[0].description);
+    setDescription(response.data.weather[0].main);
   }
 
   function search() {
